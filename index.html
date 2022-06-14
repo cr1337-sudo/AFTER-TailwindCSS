@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav
+      class="fixed w-[100%] z-50 flex items-center justify-between p-5 bg-slate-500"
+    >
+      <div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Trivago.svg/2560px-Trivago.svg.png"
+          class="h-10"
+          alt=""
+        />
+      </div>
+      <div>
+        <ul class="flex gap-4 text-white">
+          <li class="cursor-pointer text-xl hover:text-orange-400">Home</li>
+          <li class="cursor-pointer text-xl hover:text-orange-400">
+            Productos
+          </li>
+          <li class="cursor-pointer text-xl hover:text-orange-400">About</li>
+        </ul>
+      </div>
+      <div>
+        <img
+          src="https://img.indiaforums.com/article/900x900/18/5613-i-deeply-regret-that-my-behaviour-has-stained-will-smith-pens-a-public-apology.jpg?c=6dI69B"
+          alt=""
+          class="h-10 rounded-full"
+        />
+      </div>
+    </nav>
+    <main class="relative">
+      <img
+        src="https://img.wallpapersafari.com/desktop/1600/900/86/26/7eOCWS.jpg"
+        alt=""
+        class="bg-gray-500 h-[100vh] w-[100%]"
+      />
+      <form
+        action=""
+        class="absolute top-[35%] left-4 bg-white flex flex-col p-6 rounded-sm shadow-lg"
+      >
+        <p class="text-2xl">Viajes al mejor precio</p>
+        <div>
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="my-2 outline-none border p-1"
+          /><input
+            type="text"
+            placeholder="Apellido"
+            class="my-2 outline-none border p-1"
+          />
+        </div>
+        <input
+          type="email"
+          placeholder="Email"
+          class="my-2 outline-none border p-1"
+        />
+        <input
+          type="text"
+          placeholder="Mensaje"
+          class="my-2 outline-none border p-1"
+        />
+        <button class="w-[100%] bg-red-300 py-3 rounded-sm">Enviar</button>
+      </form>
+    </main>
+    <div id="destinos" class="px-5 py-6 flex flex-col">
+      <h2
+        class="text-4xl border-b-2 border-orange-600 inline-block px-4 py-1 mb-2"
+      >
+        Destinos
+      </h2>
+      <div id="destinosContainer" class="flex flex-wrap gap-3"></div>
+      <div></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
